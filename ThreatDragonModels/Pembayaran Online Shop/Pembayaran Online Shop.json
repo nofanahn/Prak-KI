@@ -38,6 +38,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -121,7 +122,6 @@
               ]
             },
             "id": "687e1a69-01a5-4874-b29c-618c4da74ae5",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Pengguna",
@@ -154,6 +154,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -237,7 +238,6 @@
               ]
             },
             "id": "f0149d5b-e8ac-46f2-adfd-6f11e98b896a",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "e-commerce \npemesanan",
@@ -295,6 +295,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -378,7 +379,6 @@
               ]
             },
             "id": "0ad931ce-190f-4743-83d4-2eaf0d675568",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Payment\nGateaway",
@@ -419,6 +419,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -502,7 +503,6 @@
               ]
             },
             "id": "ce5b0259-03f4-4c1f-81e4-37ad5370b786",
-            "zIndex": 4,
             "data": {
               "type": "tm.Store",
               "name": "Database Bank /\nLayanan Keuangan",
@@ -1203,6 +1203,110 @@
             ]
           },
           {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "User \nInteraction\nBoundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "User \nInteraction\nBoundary"
+            ],
+            "id": "5d2607f1-ca9b-44cb-a921-1026d910d942",
+            "source": {
+              "x": 137,
+              "y": 385
+            },
+            "target": {
+              "x": 380,
+              "y": 60
+            },
+            "vertices": [
+              {
+                "x": 330,
+                "y": 385
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "e-commerce\ninternal\nboundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "e-commerce\ninternal\nboundary"
+            ],
+            "id": "69a59b47-529e-453f-a404-5563c9212c09",
+            "source": {
+              "x": 365,
+              "y": 501
+            },
+            "target": {
+              "x": 690,
+              "y": 70
+            },
+            "vertices": [
+              {
+                "x": 480,
+                "y": 440
+              },
+              {
+                "x": 590,
+                "y": 330
+              },
+              {
+                "x": 670,
+                "y": 180
+              }
+            ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Bank Restricted\nNetwork",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false
+            },
+            "labels": [
+              "Bank Restricted\nNetwork"
+            ],
+            "id": "51039391-3cc2-470c-be65-fcfa8b1b35ed",
+            "source": {
+              "x": 800,
+              "y": 80
+            },
+            "target": {
+              "x": 990,
+              "y": 300
+            },
+            "vertices": [
+              {
+                "x": 850,
+                "y": 340
+              }
+            ]
+          },
+          {
             "position": {
               "x": 345,
               "y": 370
@@ -1223,6 +1327,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1306,7 +1411,6 @@
               ]
             },
             "id": "06dfd8e9-a218-445b-8791-0558177e944f",
-            "zIndex": 11,
             "data": {
               "type": "tm.Process",
               "name": "e-commerce\nPembayaran",
@@ -1342,6 +1446,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1425,7 +1530,6 @@
               ]
             },
             "id": "a15f7a91-e77a-4c0f-86c3-5e26488c4b7a",
-            "zIndex": 12,
             "data": {
               "type": "tm.Process",
               "name": "Bank /\nLayanan\nKeuangan",
@@ -1466,6 +1570,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1549,7 +1654,6 @@
               ]
             },
             "id": "1c41cedc-30ae-44d7-bff1-e293400232ca",
-            "zIndex": 13,
             "data": {
               "type": "tm.Store",
               "name": "Database e-commerce",
